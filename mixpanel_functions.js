@@ -3,7 +3,7 @@ window.onload = function postDataToWebhook(data){
     const queryString = window.location.search; //Find all params
     const urlParams = new URLSearchParams(queryString); // Decode params
     const email = urlParams.get('email') // Get value
-    const mixId = mixpanel.distinct_id();
+    const mixId = mixpanel.distinct_id()
 
     mixpanel.alias(email);
 
